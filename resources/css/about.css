@@ -1,0 +1,20 @@
+
+.aboutme-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/img4.jpg);
+    height: 125vh;
+}
+
+.heading {
+    color: white;
+    float: left;
+    text-align: left;
+    font-size: 6vw;
+    line-height:100%;
+    font-family: "Ariel", cursive;
+    margin-top: 10vh;
+    margin-left: 10vw;
+}
+
+.about-space {
+    height:100vh
+}
