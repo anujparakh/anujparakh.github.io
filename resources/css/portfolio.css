@@ -1,0 +1,199 @@
+.portfolio-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/portfoliowallpaper.png);
+    height: 100vh;
+}
+
+.heading
+{
+    text-align: center;
+}
+
+.heading h1 
+{
+    text-align: center;
+    color: white;
+    font-size: 6vw;
+    font-family: "Ariel";
+    letter-spacing: 10px;
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+
+.heading a
+{
+    margin-top: 5vh;
+    font-size: 48px;
+    color: white;
+    text-decoration: none;
+}
+
+.lbbproj
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/arduino.jpeg);
+    height:120vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.spacer
+{
+    height: 6vh;
+    color:transparent;
+}
+
+.lbbproj h1
+{
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 4vw;
+}
+
+.lbbproj img
+{
+    margin-top: 14vh;
+    float: right;
+    margin-right: 12vw;
+    margin-left: 3vw;
+    width: 35vw;
+    border-radius: 10px;
+    border: 6px solid turquoise;
+}
+
+.lbbproj p
+{
+    color: white;
+    margin-top: 15vh;
+    margin-left: 3vw;
+    margin-right: 2vw;
+    font-size: 22px;
+    line-height: 150%;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.ultttproj
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imgs/programming.jpeg);
+    height:120vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.ultttproj h1
+{
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 4vw;
+}
+
+.ultttproj img
+{
+    margin-top: 14vh;
+    float: right;
+    margin-right: 12vw;
+    margin-left: 3vw;
+    width: 35vw;
+    border-radius: 10px;
+    border: 6px solid white;
+}
+
+.ultttproj p
+{
+    color: white;
+    margin-top: 15vh;
+    margin-left: 3vw;
+    margin-right: 2vw;
+    font-size: 23px;
+    line-height: 160%;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.quotes
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imgs/android.jpg);
+    height:120vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.quotes h1
+{
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 4vw;
+}
+
+.quotes img
+{
+    margin-top: 14vh;
+    float: right;
+    margin-right: 12vw;
+    margin-left: 3vw;
+    width: 35vw;
+    border-radius: 10px;
+    border: 6px solid white;
+}
+
+.quotes p
+{
+    color: white;
+    margin-top: 15vh;
+    margin-left: 3vw;
+    margin-right: 2vw;
+    font-size: 23px;
+    line-height: 160%;
+    font-family: "Roboto", sans-serif;
+}   
+
+.trafficlight
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imgs/rasppi.jpg);
+    height:120vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.trafficlight h1
+{
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 4vw;
+}
+
+.trafficlight img
+{
+    margin-top: 14vh;
+    float: right;
+    margin-right: 12vw;
+    margin-left: 3vw;
+    width: 35vw;
+    border-radius: 10px;
+    border: 6px solid white;
+}
+
+.trafficlight p
+{
+    color: white;
+    margin-top: 15vh;
+    margin-left: 3vw;
+    margin-right: 2vw;
+    font-size: 23px;
+    line-height: 160%;
+    font-family: "Roboto", sans-serif;
+}
+
+.vid
+{
+    margin-top: 14vh;
+    float: right;
+    margin-right: 12vw;
+    margin-left: 3vw;
+    width: 23vw;
+    border-radius: 10px;
+    border: 6px solid white;
+}

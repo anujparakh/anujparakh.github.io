@@ -1,0 +1,60 @@
+.service-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/service.jpeg);
+    height: 100vh;
+}
+
+
+.service-header h1 
+{
+    text-align: center;
+    color: white;
+    font-size: 10vw;
+    font-family: "Ariel";
+    letter-spacing: 10px;
+    margin: 0 auto;
+    margin-top: 30vh;
+}
+
+.service-space
+{   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imgs/bigevent.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.service-square
+{
+    width: 50%; 
+    height: 50%; 
+    float: left;
+}
+
+.service-square a
+{
+    color: white;
+    font-size: 3vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.service-square h1
+{
+    color: white;
+    font-size: 3vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.service-square p
+{
+    color: white;
+    font-size: 22px;
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+    margin-top: 5vh;
+    line-height: 150%;
+}

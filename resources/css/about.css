@@ -1,20 +1,53 @@
 
 .aboutme-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/img4.jpg);
-    height: 125vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/img2.jpg);
+    height: 150vh;
 }
 
 .heading {
     color: white;
-    float: left;
+    float: right;
     text-align: left;
     font-size: 6vw;
     line-height:100%;
-    font-family: "Ariel", cursive;
+    font-family: "Ariel";
+    letter-spacing: 10px;
     margin-top: 10vh;
-    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .about-space {
-    height:100vh
+    height:100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/tamucampus.jpg);
+    background-size: cover;
+    background-position: center;
 }
+
+.waste-space{
+    height:20vh;
+    color:transparent;
+}
+
+.about-space img {
+    width: 40vw;
+    margin-left: 5vw;
+    margin-right: 2vw;
+    border-radius: 10px;
+    border: 5px solid white;
+    float: right;
+}
+
+.about-space ul
+{
+    margin-top:2vh;
+}
+
+.about-space li {
+    text-align: left;
+    margin-left:5vw;
+    margin-top:12px;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+

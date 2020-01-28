@@ -2,21 +2,12 @@
 
 .landing-header {
     /* background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../imgs/img2.jpg); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/img3.jpg);
-    height: 200vh
-}
-
-.picture {
-    width: 22.5%;
-    border-radius: 15px;
-    margin: auto;
-    margin-top: 5vh;
-    display: block;
-    border: 5px solid white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/img11.png);
+    height: 100vh;
 }
 
 .index-body {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .intro h1 {
