@@ -19,6 +19,8 @@
     margin-top: 10vh;
     white-space: nowrap;
     animation: typing 5s steps(40, end);
+    font-family: Ariel;
+    word-spacing: 5px;
 }
 
 .intro h2 {
@@ -32,6 +34,9 @@
     width: 0;
     animation: typing 5s steps(40, end) forwards;
     animation-delay: 3s;
+    font-family: Ariel;
+    word-spacing: 5px;
+
 }
 
 @keyframes delayer {

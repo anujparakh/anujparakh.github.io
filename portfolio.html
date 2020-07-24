@@ -23,67 +23,59 @@
 
         <div class="heading">
             <h1>My Projects</h1>
-            <a href="https://github.com/anujparakh13" class="fa fa-github"> Github</a>
+            <a target="_blank" href="https://github.com/anujparakh13" class="fa fa-github"> Github</a>
         </div>
 
     </header>
 
-    <div class="lbbproj">
-        <div class="spacer"></div>
+    <section class="lbbproj">
         <h1>The Phantom Guitar</h1>
-        <a href="https://punchthrough.com/bean/"><img src="resources/imgs/lightbluebean.jpg" alt="Light Blue Bean"></a>
-        <p>The Phantom Guitar is the perfect mix of two of my childhood hobbies: playing guitar, and arduinos/embedded development. I eventually
-            had the great idea to bring both of my hobbies together. I found the LightBlue Bean by PunchThrough (Click on the picture to learn more) which
-            was a perfect fit for my project.<br><br>The LightBlue Bean is a BLE device and works much like an Arduino, except over Bluetooth Low Energy. It
-            has an LED, accelerometer and numerous I/O pins.<br> I wrote iOS and MacOS apps where the user can select guitar chords to play,
-            and then use the Bean like a guitar pick, strumming in air while getting the feeling and sound of playing a guitar.
+        <img src="resources/imgs/lightbluebean.jpg" alt="Light Blue Bean">
+        <p>The Phantom Guitar is the perfect mix of two of my childhood hobbies: playing guitar, and arduinos/embedded development. I used the <a target="_blank" href="https://punchthrough.com/bean/">LightBlue Bean</a>, 
+            which is a bluetooth Arduino-style device with an acceloremeter. I wrote iOS and MacOS apps where the user can select guitar chords to play,
+            and then use the Bean like a guitar pick, strumming in air while getting the feeling and sound of playing a guitar. The idea was to recreate playing <a target="_blank" href="https://www.youtube.com/watch?v=WQ8E-AVgcUw">Air Guitar</a>.
         </p>
-    </div>
-
-    <div class="ultttproj">
-        <div class="spacer"></div>
-        <h1>Ultimate Tic Tac Toe</h1>
-        <a href="https://joeyrobert.org/projects/ultimatetictactoe/"><img src="resources/imgs/uttt.jpg" alt="Ultimate Tic Tac Toe"></a>
-        <p>When I first learnt iOS and Android programming, I decided to make the simple but fun game
-            of Tic-Tac-Toe. Then, I found out about Ultimate Tic Tac Toe, a much harder version of the
-            same game (to try the game, click on the picture).<br><br>
-            Playing the usual small Tic-Tac-Toe is much easier than playing the same game on 9 boards with a bunch of new rules. It was also
-            a challenge to code it, but I enjoyed the challenge. This project helped me understand how important Object Oriented Programming is, because I
-            was able to create one single board and make 9 of the same boards, making my task much easier.
-        </p>
-    </div>
-
-    <div class="quotes">
-        <div class="spacer"></div>
-        <h1>"Quotes" Android App</h1>
-        <a href="https://apkpure.ai/quotes-13"><img src="resources/imgs/quotesfinal.png" alt="Quotes Android App"></a>
-        <p>When I first started programming in High School, smartphones were just gaining popularity. There were not many apps on the market.
-            The idea of programming an Android Application was really cool for me. I had just learnt Java when I found out I could
-            easily download Android Studio and get on my way to creating my first Android application.<br><br>
-            I made a simple application that displayed my favorite quotes. I also added handy features like saving your favorite quotes,
-            adding new quotes, and a neat chalkboard theme, which I thought was great at the time.<br><br>Click on the picture to see the app.
-        </p>
-    </div>
-
-    <div class="trafficlight">
-        <div class="spacer"></div>
-        <h1>Traffic Light Controller</h1>
-        <a href="https://www.raspberrypi.org/"><video class="vid" controls autoplay><source src="resources/vids/trafficlight.mov" type="video/mp4">Can't load video.</video></a>
-        <p>As part of a college class, I have started working with Raspberry Pis. I have worked extensively with Arduinos in the past, but this was my first
-            introduction to Raspberry Pi. Although Pis contain a full OS and may be used as a desktop, they are similar to Arduinos in some ways. (click on the picture to learn more) <br> <br>
-            We designed a traffic light controller which is shown in the accompanying video. Using the Raspberry Pi for logic and control, the two LEDs act as stop lights.
-            The push button acts as a button for pedestrians to press when crossing the road. Then, the countdown provides them time to cross the road and then the light turns back to red.
-            <br><br>This was a great introduction to Raspberry Pis and it invigorated me to experiment and tinker with them more.
-
-        </p>
-    </div>
-
-    <section class="footer">
-        <div></div>
-        <p><a href="https://www.linkedin.com/in/anuj-parakh/">LinkedIn</a></p>
-        <p>Email: anuj@anujinfotech.com</p>
     </section>
 
+    <section class="speaker">
+        <h1>Three Stage Amplifier Speaker</h1>
+        <img src="resources/imgs/speaker.png" alt="Speaker">
+        <p>As a final project for an Electrical Engineering course, me and my partner created a three stage amplifier speaker.
+            We used our knowledge of BJTs (Bipolar Junction Transistors) and were able to design an amplifier capable of playing loud-ish music for a long time.
+            Here is a <a target="_blank" href="https://www.youtube.com/watch?v=v25CMmxGf4E&feature=youtu.be">youtube video</a> of the same.
+        </p>
+    </section>
+
+   
+    <section class="ultttproj">
+        <h1>Ultimate Tic-Tac-Toe</h1>
+        <img src="resources/imgs/uttt.jpg" alt="Ultimate Tic-Tac-Toe">
+        <p><a target="_blank" href="https://joeyrobert.org/projects/ultimatetictactoe/">Ultimate Tic-Tac-Toe</a> is a much harder, complex version of the usual Tic-Tac-Toe game. I implemented a version
+        of this game by first creating the normal Tic-Tac-Toe board, then creating 9 of the same boards. It is a very challenging yet enjoyable game. </p>
+    </section>
+
+    <section class="trafficlight">
+        <h1>Traffic Light Controller</h1>
+        <video class="vid" controls ><source src="resources/vids/trafficlight.mov" type="video/mp4">Can't load video.</video>
+        <p>We designed a traffic light controller which is shown in the accompanying video. Using the Raspberry Pi for logic and control, the two LEDs act as stop lights.
+            The push button acts as a button for pedestrians to press when crossing the road. Then, the countdown provides them time to cross the road and then the light turns back to red.
+        </p>
+    </section>
+
+    <section class="quotes">
+        <h1>Quotes Android App</h1>
+        <img src="resources/imgs/quotes-single.png" alt="Quotes">
+        <p>In High School, I made a simple application called <a target="_blank" href="https://apkpure.ai/quotes-13">Quotes</a> that displayed my favorite quotes. I also added handy features like saving your favorite quotes,
+            adding new quotes, and a neat chalkboard theme, which I thought was great at the time.
+    </section>
+
+    <section class="footer">
+        <div style="float:left; width:14vw; height: 100%;"></div>
+        <div style="float:left; width:24vw; height: 100%;"><p><a class="fa fa-linkedin-square" style="font-size:17px;color:grey; text-decoration: none;" href="https://www.linkedin.com/in/anuj-parakh/"> LinkedIn</a></p></div>
+        <div style="float:left; width:24vw; height: 100%;"><p>anuj@anujinfotech.com</p></li></div>
+        <div style="float:left; width:24vw; height: 100%;"><p>+1-979-267-0771</p></div>
+        <div style="float:left; width:14vw; height: 100%;"></div>
+   </section>
 </body>
 
 </html>

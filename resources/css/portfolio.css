@@ -23,16 +23,8 @@
 {
     margin-top: 5vh;
     font-size: 48px;
-    color: white;
+    color: #72d2d4;
     text-decoration: none;
-}
-
-.lbbproj
-{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/arduino.jpeg);
-    height:120vh;
-    background-size: cover;
-    background-position: center;
 }
 
 .spacer
@@ -43,157 +35,184 @@
 
 .lbbproj h1
 {
-    color: white;
+    color: black;
+    font-family: "Ariel";
+    word-spacing: 5px;
     text-align: center;
-    margin: 0 auto;
+    margin: 5vh auto;
     font-size: 4vw;
 }
 
 .lbbproj img
 {
-    margin-top: 14vh;
-    float: right;
-    margin-right: 12vw;
-    margin-left: 3vw;
-    width: 35vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
     border-radius: 10px;
-    border: 6px solid turquoise;
+    border: 3px solid turquoise;
 }
 
 .lbbproj p
 {
-    color: white;
-    margin-top: 15vh;
-    margin-left: 3vw;
-    margin-right: 2vw;
+    color: #666;
+    margin: 5vh auto;
+    text-align: center;
+    width: 60%;    
     font-size: 22px;
     line-height: 150%;
-    font-family: "Roboto", sans-serif;
+    font-family: "Helvetica Neue", sans-serif;
 }
 
-
-.ultttproj
+.lbbproj a
 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imgs/programming.jpeg);
-    height:120vh;
-    background-size: cover;
-    background-position: center;
+    color: #72bcd4;
 }
+
+.speaker h1
+{
+    color: black;
+    font-family: "Ariel";
+    word-spacing: 5px;
+    text-align: center;
+    margin: 5vh auto;
+    font-size: 4vw;
+}
+
+.speaker img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    border-radius: 10px;
+    border: 3px solid lightsteelblue;
+}
+
+.speaker p
+{
+    color: #666;
+    margin: 5vh auto;
+    text-align: center;
+    width: 60%;    
+    font-size: 22px;
+    line-height: 150%;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.speaker a
+{
+    color: #72bcd4;
+}
+
 
 .ultttproj h1
 {
-    color: white;
+    color: black;
+    font-family: "Ariel";
+    word-spacing: 5px;
     text-align: center;
-    margin: 0 auto;
+    margin: 5vh auto;
     font-size: 4vw;
 }
 
 .ultttproj img
 {
-    margin-top: 14vh;
-    float: right;
-    margin-right: 12vw;
-    margin-left: 3vw;
-    width: 35vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
     border-radius: 10px;
-    border: 6px solid white;
+    border: 3px solid lightcoral;
 }
 
 .ultttproj p
 {
-    color: white;
-    margin-top: 15vh;
-    margin-left: 3vw;
-    margin-right: 2vw;
-    font-size: 23px;
-    line-height: 160%;
-    font-family: "Roboto", sans-serif;
+    color: #666;
+    margin: 5vh auto;
+    text-align: center;
+    width: 60%;    
+    font-size: 22px;
+    line-height: 150%;
+    font-family: "Helvetica Neue", sans-serif;
 }
 
-
-.quotes
+.ultttproj a
 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imgs/android.jpg);
-    height:120vh;
-    background-size: cover;
-    background-position: center;
+    color: #72bcd4;
 }
+
+
+
+.trafficlight h1
+{
+    color: black;
+    font-family: "Ariel";
+    word-spacing: 5px;
+    text-align: center;
+    margin: 5vh auto;
+    font-size: 4vw;
+}
+
+.trafficlight video
+{
+    display:block;
+    margin: 5vh auto;
+    width: 20%;
+    border-radius: 10px;
+    border: 3px solid lightsteelblue;
+}
+
+.trafficlight p
+{
+    color: #666;
+    margin: 5vh auto;
+    text-align: center;
+    width: 60%;    
+    font-size: 22px;
+    line-height: 150%;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.trafficlight a
+{
+    color: #72bcd4;
+}
+
 
 .quotes h1
 {
-    color: white;
+    color: black;
+    font-family: "Ariel";
+    word-spacing: 5px;
     text-align: center;
-    margin: 0 auto;
+    margin: 5vh auto;
     font-size: 4vw;
 }
 
 .quotes img
 {
-    margin-top: 14vh;
-    float: right;
-    margin-right: 12vw;
-    margin-left: 3vw;
-    width: 35vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
     border-radius: 10px;
-    border: 6px solid white;
+    border: 3px solid lightsalmon;
 }
 
 .quotes p
 {
-    color: white;
-    margin-top: 15vh;
-    margin-left: 3vw;
-    margin-right: 2vw;
-    font-size: 23px;
-    line-height: 160%;
-    font-family: "Roboto", sans-serif;
-}   
-
-.trafficlight
-{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imgs/rasppi.jpg);
-    height:120vh;
-    background-size: cover;
-    background-position: center;
-}
-
-.trafficlight h1
-{
-    color: white;
+    color: #666;
+    margin: 5vh auto;
     text-align: center;
-    margin: 0 auto;
-    font-size: 4vw;
+    width: 60%;    
+    font-size: 22px;
+    line-height: 150%;
+    font-family: "Helvetica Neue", sans-serif;
 }
 
-.trafficlight img
+.quotes a
 {
-    margin-top: 14vh;
-    float: right;
-    margin-right: 12vw;
-    margin-left: 3vw;
-    width: 35vw;
-    border-radius: 10px;
-    border: 6px solid white;
+    color: #72bcd4;
 }
 
-.trafficlight p
-{
-    color: white;
-    margin-top: 15vh;
-    margin-left: 3vw;
-    margin-right: 2vw;
-    font-size: 23px;
-    line-height: 160%;
-    font-family: "Roboto", sans-serif;
-}
-
-.vid
-{
-    margin-top: 14vh;
-    float: right;
-    margin-right: 12vw;
-    margin-left: 3vw;
-    width: 23vw;
-    border-radius: 10px;
-    border: 6px solid white;
-}

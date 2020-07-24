@@ -8,6 +8,11 @@
     text-align: center;
 }
 
+.body
+{
+    background-color: white;
+}
+
 .heading h1 
 {
     text-align: center;
@@ -19,22 +24,14 @@
     margin-top: 10vh;
 }
 
-.resume-space
-{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imgs/programming2.jpeg);
-    background-size: cover;
-    background-position: cover;
-    height:115vh;
-}
-
 .resume-space h1
 {
     text-align: center;
-    color: white;
+    color: black;
     font-size: 5vw;
-    font-family: "Ariel";
-    letter-spacing: 10px;
+    letter-spacing: 7px;
     margin: 0 auto;
+    font-family: "Ariel";
 }
 
 .resume-space h2
@@ -43,23 +40,25 @@
     font-size: 2.5vw;
     text-align: center;
     font-weight: normal;
-    color: white;
+    color: black;
     font-family: "Ariel";
     /* letter-spacing: 5px; */
 }
 
 .resume-space a
 {
-    color: white;
+    color: #72bcd4;
 }
 
 .resume-space p
 {
-    color: white;
+    color: #666;
     width: 60%;
     margin: 0 auto;
     text-align: center;
     margin-top: 4vh;
     font-size: 22px;
-    line-height: 160%
+    line-height: 160%;
+    font-family: "Helvetica Neue", sans-serif;
+
 }
