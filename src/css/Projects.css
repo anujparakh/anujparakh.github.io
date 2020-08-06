@@ -1,0 +1,21 @@
+.projects {
+    background-color: #28334A;
+    font-family: Helvetica;
+    font-weight: 300;
+    position: relative;
+}
+
+#left-projects-bar
+{
+    background-color: #61dafb;
+}
+
+.projects-collection {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}

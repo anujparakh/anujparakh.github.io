@@ -1,0 +1,30 @@
+.experience {
+    background-color: #282c34;
+    font-family: Helvetica;
+    font-weight: 300;
+    position: relative;
+}
+
+#left-experience-bar
+{
+    background-color: gold;
+}
+
+.experience h2 {
+    color: white;
+    font-size: 4em;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+#experience-subheading {
+    margin-bottom: 40px;
+}
+
+.experience a{
+    color: #61dafb;
+    text-decoration: underline;
+}

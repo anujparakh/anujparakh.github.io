@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+main {
+    margin: 16px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background: #212a3b;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 300;
+    width: 100%;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.fixed {
+    background: black;
+}
+
+.navbar__title {
+    margin-right: auto;
+    font-size: 150%;
+    vertical-align: middle;
+    padding: 16px 16px;
+
+}
+
+.navbar__item {
+    padding: 16px 16px;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: 0.5s;
+}
+
+.navbar__item:hover {
+    color: #61dafb;
+}

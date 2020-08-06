@@ -1,0 +1,24 @@
+.about {
+    background-color: #28334A;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Helvetica;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+
+#aboutMeImg {
+    border-radius: 50%;
+    width: 215px;
+    margin: 30px;
+    border: 1px #ccc solid;
+}
+
+#about-me-text {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 150%;
+}

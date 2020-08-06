@@ -1,0 +1,73 @@
+.project-thumb-view {
+    display: flex;
+    flex-direction: row;
+    border-radius: 7%;
+    padding: 20px;
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+.imgCol {
+    width: 35%;
+    /* display: flex;
+    align-items: center; */
+}
+
+.imgCol img {
+    width: 80%;
+    border-radius: 5%;
+    margin-top: 10px;
+}
+
+.textCol {
+    width: 60%;
+    margin-left: 5%;
+}
+
+.title-holder{
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    color: #61dafb;
+    font-size: 2em;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#projectGithub {
+    color: #61dafb;
+    font-size: 2em;
+    width: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+    text-align: left;
+    text-decoration: none;
+}
+
+.project-date {
+    color: whitesmoke;
+    font-size: 1em;
+    margin: 0;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.description {
+    color: whitesmoke;
+    font-size: 1.3em;
+    text-align: left;
+    line-height: 130%;
+}
+
+#demoLink a {
+    color: #61dafb;
+    font-size: 1em;
+    text-align: left;
+    text-decoration: underline;
+}
+
