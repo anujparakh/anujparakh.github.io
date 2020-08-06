@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.77d828f3.chunk.css",
+    "main.js": "/static/js/main.5706e9e3.chunk.js",
+    "main.js.map": "/static/js/main.5706e9e3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.690794d7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.690794d7.js.map",
+    "static/js/2.21718d8c.chunk.js": "/static/js/2.21718d8c.chunk.js",
+    "static/js/2.21718d8c.chunk.js.map": "/static/js/2.21718d8c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.db11f5d23b6d5d9108452c3a5840dd9b.js": "/precache-manifest.db11f5d23b6d5d9108452c3a5840dd9b.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.77d828f3.chunk.css.map": "/static/css/main.77d828f3.chunk.css.map",
+    "static/js/2.21718d8c.chunk.js.LICENSE.txt": "/static/js/2.21718d8c.chunk.js.LICENSE.txt",
+    "static/media/Mits.png": "/static/media/Mits.944d30b5.png",
+    "static/media/MitsVid.mp4": "/static/media/MitsVid.26603df2.mp4",
+    "static/media/blendingImage.jpg": "/static/media/blendingImage.ea9789c6.jpg",
+    "static/media/boeinglogo.png": "/static/media/boeinglogo.66653831.png",
+    "static/media/lightbluebean.jpg": "/static/media/lightbluebean.1035992f.jpg",
+    "static/media/me_newyork.png": "/static/media/me_newyork.fda6a014.png",
+    "static/media/packadvisorLogo.png": "/static/media/packadvisorLogo.385e8086.png",
+    "static/media/tamuLogo.png": "/static/media/tamuLogo.8ad950d9.png",
+    "static/media/threeStageSpeaker.png": "/static/media/threeStageSpeaker.31e5a504.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.690794d7.js",
+    "static/js/2.21718d8c.chunk.js",
+    "static/css/main.77d828f3.chunk.css",
+    "static/js/main.5706e9e3.chunk.js"
+  ]
+}
