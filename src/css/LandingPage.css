@@ -70,3 +70,20 @@
     color: #61dafb;
     cursor: pointer;
 }
+
+@media (max-width: 700px) {
+    .landing img {
+        width: 30vh;
+        height: 30vh;
+    }
+
+    .mainheading {
+        width: 80%;
+        font-size: 2.5em;
+    }
+
+    .secondheading {
+        font-size: 1.4em;
+        width: 80%;
+    }
+}

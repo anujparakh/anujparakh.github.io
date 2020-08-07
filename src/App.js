@@ -11,12 +11,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 import './App.css';
 
-const scrollTo = ref => {
-  if (ref)
-  {
-    ref.scrollIntoView({ behavior: 'smooth', block: 'start'})
-  }
-}
+const mobileWidth = 700
 
 class App extends React.Component {
   constructor() {
@@ -39,18 +34,18 @@ class App extends React.Component {
     }
     else if (window.scrollY > 0 && this.state.headerFixed !== true) {
       this.setState({ headerFixed: true });
-    }    
+    }
   }
 
   render() {
     return (
       <div className="App" onScroll={this.handleScroll}>
-        <Header isFixed={this.state.headerFixed}></Header>
-        <LandingPage isAtTop={!this.state.headerFixed} id="landing"></LandingPage>
-        <Projects id="projects"></Projects>
-        <Experience></Experience>
-        <About></About>
-        <Footer></Footer>
+        <Header isFixed={this.state.headerFixed} mobileWidth={mobileWidth}></Header>
+        <LandingPage isAtTop={!this.state.headerFixed} mobileWidth={mobileWidth}></LandingPage>
+        <Projects mobileWidth={mobileWidth}></Projects>
+        <Experience mobileWidth={mobileWidth}></Experience>
+        <About mobileWidth={mobileWidth}></About>
+        <Footer mobileWidth={mobileWidth}></Footer>
       </div>
     );
   }

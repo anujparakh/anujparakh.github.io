@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    margin: 16px;
+    /* margin: 16px; */
 }
 
 .navbar {
@@ -20,7 +20,7 @@ main {
 }
 
 .fixed {
-    background: black;
+    background-color: black;
 }
 
 .navbar__title {
@@ -28,7 +28,6 @@ main {
     font-size: 150%;
     vertical-align: middle;
     padding: 16px 16px;
-
 }
 
 .navbar__item {
@@ -41,3 +40,51 @@ main {
 .navbar__item:hover {
     color: #61dafb;
 }
+
+.mobile-navbar {
+    display: flex;
+    align-items: center;
+    background-color: #212a3b;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 300;
+    width: 100%;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.mobile-title {
+    color: white;
+    margin-left: auto;
+    font-size: 150%;
+    vertical-align: middle;
+    padding: 16px 16px;
+}
+
+#hamburger {
+    color: white;
+    background: none;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    padding: 16px;
+    font-size: 170%;
+    transition: 0.5s;
+    z-index: 1;
+    transition: all 0.3s linear;
+}
+
+/* :first-child {
+    transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+  }
+
+  :nth-child(2) {
+    opacity: ${({ open }) => open ? '0' : '1'};
+    transform: ${({ open }) => open ? 'translateX(20px)' : 'translateX(0)'};
+  }
+
+  :nth-child(3) {
+    transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+  } */
+

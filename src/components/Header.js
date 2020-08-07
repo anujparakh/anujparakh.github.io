@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 import '../css/Header.css'
+import '../css/Hamburger.css'
+import SideMenu from './SideMenu.js'
 
 export default class Header extends React.Component {
     constructor(props) {
@@ -9,6 +11,24 @@ export default class Header extends React.Component {
             isFixed: props.isFixed
         }
         this.addLeftBar = this.addLeftBar.bind(this)
+        this.handleResize = this.handleResize.bind(this)
+        this.state = {
+            fullSizeHeader: (window.innerWidth >= this.props.mobileWidth),
+            sideMenuOpen: false
+         }
+
+    }
+
+    handleResize = (e) => {
+        this.setState({ fullSizeHeader: (window.innerWidth >= this.props.mobileWidth) })
+    };
+
+    componentDidMount() {
+        window.addEventListener("resize", this.handleResize);
+    }
+
+    componentWillUnmount() {
+        window.addEventListener("resize", this.handleResize);
     }
 
     componentWillReceiveProps(props) {
@@ -17,10 +37,10 @@ export default class Header extends React.Component {
 
     addLeftBar() {
         if (!this.state.isFixed)
-            return <div className="left-bar" style={{backgroundColor: '#61dafb'}}></div>
+            return <div className="left-bar" style={{ backgroundColor: '#61dafb' }}></div>
     }
 
-    render() {
+    createFullScreenHeader() {
         return <header className={this.state.isFixed ? 'navbar fixed' : 'navbar'}>
             {this.addLeftBar()}
             <div className='navbar__title'>Anuj Parakh</div>
@@ -59,5 +79,26 @@ export default class Header extends React.Component {
                 className='navbar__item'
             >Contact</Link>
         </header>
+    }
+
+    createHamburgerMenu() {
+        return <header className='mobile-navbar' style={this.state.isFixed && !this.state.sideMenuOpen ? {backgroundColor: 'black'} : {backgroundColor: 'rgba(0,0,0,0)'}} >
+            {this.addLeftBar()}
+            {/* <button className="fa fa-bars" id="hamburger" onClick={() => this.setState({ sideMenuOpen: !this.state.sideMenuOpen})}></button> */}
+            <button className={this.state.sideMenuOpen ? "hamburger hamburger--spin is-active" : "hamburger hamburger--spin"} onClick={() => this.setState({ sideMenuOpen: !this.state.sideMenuOpen})} type="button">
+            <span className="hamburger-box">
+                <span className="hamburger-inner" style={{backgroundColor: 'white'}}></span>
+            </span>
+            </button>
+            <SideMenu isOpen={this.state.sideMenuOpen} onScreenClose={ () => this.setState({ sideMenuOpen: false}) } ></SideMenu>
+            {this.state.isFixed && !this.state.sideMenuOpen ? <div className='mobile-title'>Anuj Parakh</div> : null}
+        </header>
+    }
+
+    render() {
+        if (this.state.fullSizeHeader)
+            return this.createFullScreenHeader()
+        else
+            return this.createHamburgerMenu()
     }
 }

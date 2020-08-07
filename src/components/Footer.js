@@ -3,7 +3,7 @@ import '../css/Footer.css'
 
 export default class Footer extends React.Component {
     render() {
-        return <div class="footer">
+        return <div className="footer">
             <div className="left-bar" style={{backgroundColor: '#61dafb'}}></div>
             <div className='heading'>Contact</div>
             <div id="thinupperline"></div>
@@ -13,11 +13,11 @@ export default class Footer extends React.Component {
             </div>
             <div className="contact-holder">
                 <p className="fa fa-phone"></p>
-                <a href="tel:+1979-267-0771">(979)-267-0771</a>                
+                <a href="tel:+1979-267-0771">(979)-267-0771</a>
             </div>
             <div className="contact-holder">
                 <p className="fa fa-linkedin-square"></p>
-                <a href="https://www.linkedin.com/in/anuj-parakh" target="_blank">linkedin.com/in/anujparakh</a>                
+                <a href="https://www.linkedin.com/in/anuj-parakh" target="_blank">linkedin.com/in/anujparakh</a>
             </div>
 
             <div id="thinlowerline"></div>

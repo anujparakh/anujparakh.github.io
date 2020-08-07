@@ -49,3 +49,17 @@
 .contact-holder a:hover {
     color: #61dafb;
 }
+
+@media (max-width: 700px) {
+    .contact-holder {
+        width: 80%;
+    }
+
+    #thinupperline {
+        width: 80%;
+    }
+
+    #thinlowerline {
+        width: 80%;
+    }
+}

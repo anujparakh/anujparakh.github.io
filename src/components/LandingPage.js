@@ -7,7 +7,7 @@ export default class LandingPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isAtTop: props.isAtTop
+            isAtTop: props.isAtTop,
         }
         this.getScrollDownArrow = this.getScrollDownArrow.bind(this)
     }
@@ -28,7 +28,7 @@ export default class LandingPage extends React.Component {
     }
 
     render() {
-        return <div className="landing">
+        return <div className="landing" >
             <div className="left-bar" style={{backgroundColor: '#61dafb'}}></div>
             <img src={myphoto}></img>
             <p className="mainheading">Hi, I'm Anuj Parakh</p>

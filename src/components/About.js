@@ -10,10 +10,10 @@ export default class About extends React.Component {
         return <div className="about">
             <div className="left-bar" style={{backgroundColor: 'gold'}}></div>
             <p className="heading">About Me</p>
-            {/* <p class="subheading">I'm a Computer Engineering Student</p> */}
+            {/* <p className="subheading">I'm a Computer Engineering Student</p> */}
             {/* <div id="content-container"> */}
             <img id="aboutMeImg" src={myphoto}></img>
-            <p id="about-me-text" class="description" dangerouslySetInnerHTML={{__html: aboutMeText}}></p>
+            <p id="about-me-text" className="description" dangerouslySetInnerHTML={{__html: aboutMeText}}></p>
             {/* </div> */}
         </div>;
     }

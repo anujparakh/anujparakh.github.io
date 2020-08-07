@@ -1,7 +1,6 @@
 .experience-view {
     display: flex;
     flex-direction: row;
-    border-radius: 7%;
     padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
@@ -52,6 +51,30 @@
 
 #description {
     line-height: 150%;
+}
+
+@media (max-width: 700px) {
+    .experience-view {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #imgCol {
+        width: 100%;
+    }
+
+    #imgCol img {
+        width: 30%;
+        border-radius: 5%;
+        margin-bottom: 20px;
+    }
+
+    #textCol {
+        text-align: center;
+        width: 90%;
+        margin-bottom: 30px;
+    }
 }
 
 

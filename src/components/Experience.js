@@ -13,11 +13,32 @@ const csptDescription = "I helped students in intro level computer science cours
 const bioEyeDescription = "I worked on a project involving machine learning to provide a mobile eye tracking solution to detect early onset dementia. I designed and developed the backend using Node.js and MongoDB. I also worked on build script fixes on Linux using CMake."
 
 export default class Experience extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            fullScreen: (window.innerWidth >= this.props.mobileWidth)
+        }
+        this.handleResize = this.handleResize.bind(this)
+    }
+
+    handleResize = (e) => {
+        this.setState({ fullScreen: (window.innerWidth >= this.props.mobileWidth) })
+    };
+
+    componentDidMount() {
+        window.addEventListener("resize", this.handleResize);
+    }
+
+    componentWillUnmount() {
+        window.addEventListener("resize", this.handleResize);
+    }
+
     render() {
         return <div className="experience">
             <div style={{backgroundColor: '#61dafb'}} className="left-bar"></div>
-            <p className="heading" >Experiences</p>
-            <p className='subheading' id="experience-subheading"><i>Click <a href="/Resume.pdf" target="_blank">here</a> to see my resume.</i></p>
+            <p className={this.state.fullScreen ? "heading" : "smallscreen-heading"}>Experiences</p>
+            <p className={this.state.fullScreen ? "subheading" : "smallscreen-subheading"} id="experience-subheading"><i>Click <a href="/Resume.pdf" target="_blank">here</a> to see my resume.</i></p>
             <ExperienceView jobTitle="Cabin and Network Systems Engineering Intern"
                 companyName="The Boeing Company"
                 fromDate="May 2020"
