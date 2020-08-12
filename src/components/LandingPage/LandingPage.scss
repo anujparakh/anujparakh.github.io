@@ -97,13 +97,17 @@
     .landing {
         background-attachment:scroll;
     }
+
     .mainheading {
         width: 80%;
-        font-size: 2.5em;
+        font-size: 3em;
+        font-weight: bold;
     }
 
     .secondheading {
-        font-size: 1.8em;
-        width: 80%;
+        font-size: 2em;
+        width: 90%;
+        font-weight: normal;
+
     }
 }

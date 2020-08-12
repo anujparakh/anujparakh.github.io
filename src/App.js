@@ -15,42 +15,42 @@ import './App.css';
 const mobileWidth = 700
 
 class App extends React.Component {
-  constructor() {
-    super()
-    this.state = { headerFixed: false }
-    this.handleScroll = this.handleScroll.bind(this)
-  }
-
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll, {passive: true});
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll = event => {
-    if (window.scrollY <= 0 && this.state.headerFixed === true) {
-      this.setState({ headerFixed: false });
+    constructor() {
+        super()
+        this.state = { headerFixed: false }
+        this.handleScroll = this.handleScroll.bind(this)
     }
-    else if (window.scrollY > 0 && this.state.headerFixed !== true) {
-      this.setState({ headerFixed: true });
-    }
-  }
 
-  render() {
-    return (
-      <div className="App" onScroll={this.handleScroll}>
-        <Header isFixed={this.state.headerFixed} mobileWidth={mobileWidth}></Header>
-        <LandingPage isAtTop={!this.state.headerFixed} mobileWidth={mobileWidth}></LandingPage>
-        <About mobileWidth={mobileWidth}></About>
-        <Projects mobileWidth={mobileWidth}></Projects>
-        <Experience mobileWidth={mobileWidth}></Experience>
-        {/* <Skills></Skills> */}
-        <Footer mobileWidth={mobileWidth}></Footer>
-      </div>
-    );
-  }
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll, { passive: true });
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll = event => {
+        if (window.scrollY <= 0 && this.state.headerFixed === true) {
+            this.setState({ headerFixed: false });
+        }
+        else if (window.scrollY > 0 && this.state.headerFixed !== true) {
+            this.setState({ headerFixed: true });
+        }
+    }
+
+    render() {
+        return (
+            <div className="App" onScroll={this.handleScroll}>
+                <Header isFixed={this.state.headerFixed} mobileWidth={mobileWidth}></Header>
+                <LandingPage isAtTop={!this.state.headerFixed} mobileWidth={mobileWidth}></LandingPage>
+                <About mobileWidth={mobileWidth}></About>
+                <Projects mobileWidth={mobileWidth}></Projects>
+                <Experience mobileWidth={mobileWidth}></Experience>
+                {/* <Skills></Skills> */}
+                <Footer mobileWidth={mobileWidth}></Footer>
+            </div>
+        );
+    }
 }
 
 export default App;
