@@ -1,3 +1,5 @@
+@import 'styles/colors';
+
 .experience-view {
     display: flex;
     flex-direction: row;
@@ -25,7 +27,7 @@
 }
 
 #jobTitle {
-    color: #61dafb;
+    color: $small-heading-color;
     font-weight: 300;
     font-size: 1.8em;
     letter-spacing: 0;
@@ -33,7 +35,7 @@
 }
 
 #companyName {
-    color: gold;
+    color: $sub-small-heading-color;
     font-size: 1.5em;
     font-weight: 300;
     margin-top: 6px;
@@ -42,7 +44,7 @@
 }
 
 #dateRange {
-    color: white;
+    color: $body-text-color;
     font-size: 1em;
     font-weight: 300;
     padding: 0;

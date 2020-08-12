@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
-import '../css/Header.css'
-import '../css/Hamburger.css'
-import SideMenu from './SideMenu.js'
+import './Header.scss'
+import './Hamburger.scss'
+import SideMenu from '../SideMenu/SideMenu'
 
 export default class Header extends React.Component {
     constructor(props) {
@@ -50,6 +50,13 @@ export default class Header extends React.Component {
                 duration={500}
                 className='navbar__item'
             >Home</Link>
+            <Link to="about"
+                spy={true}
+                smooth={true}
+                offset={-60}
+                duration={500}
+                className='navbar__item'
+            >About</Link>
             <Link to="projects"
                 spy={true}
                 smooth={true}
@@ -63,14 +70,14 @@ export default class Header extends React.Component {
                 offset={-60}
                 duration={500}
                 className='navbar__item'
-            >Experiences</Link>
-            <Link to="about"
+            >Experience</Link>
+            {/* <Link to="skills"
                 spy={true}
                 smooth={true}
                 offset={-60}
                 duration={500}
                 className='navbar__item'
-            >About</Link>
+            >Skills</Link> */}
             <Link to="footer"
                 spy={true}
                 smooth={true}
@@ -82,12 +89,12 @@ export default class Header extends React.Component {
     }
 
     createHamburgerMenu() {
-        return <header className='mobile-navbar' style={this.state.isFixed && !this.state.sideMenuOpen ? {backgroundColor: 'black'} : {backgroundColor: 'rgba(0,0,0,0)'}} >
+        return <header className={this.state.isFixed && !this.state.sideMenuOpen ? 'mobile-navbar' : 'mobile-navbar transparent'} >
             {this.addLeftBar()}
             {/* <button className="fa fa-bars" id="hamburger" onClick={() => this.setState({ sideMenuOpen: !this.state.sideMenuOpen})}></button> */}
             <button className={this.state.sideMenuOpen ? "hamburger hamburger--spin is-active" : "hamburger hamburger--spin"} onClick={() => this.setState({ sideMenuOpen: !this.state.sideMenuOpen})} type="button">
             <span className="hamburger-box">
-                <span className="hamburger-inner" style={{backgroundColor: 'white'}}></span>
+                <span className="hamburger-inner"></span>
             </span>
             </button>
             <SideMenu isOpen={this.state.sideMenuOpen} onScreenClose={ () => this.setState({ sideMenuOpen: false}) } ></SideMenu>

@@ -1,13 +1,10 @@
+@import 'styles/colors';
+
 .projects {
-    background-color: #28334A;
+    background-color: $background-color-secondary;
     font-family: Helvetica;
     font-weight: 300;
     position: relative;
-}
-
-#left-projects-bar
-{
-    background-color: #61dafb;
 }
 
 .projects-collection {

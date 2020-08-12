@@ -1,5 +1,7 @@
+@import 'styles/colors';
+
 .about {
-    background-color: #28334A;
+    background-color: $background-color-primary;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -13,11 +15,12 @@
     border-radius: 50%;
     width: 215px;
     margin: 30px;
-    border: 1px #ccc solid;
+    border: 1px $image-border-color solid;
 }
 
 #about-me-text {
-    width: 40%;
+    width: 80%;
+    max-width: 700px;
     margin: 0 auto;
     text-align: center;
     line-height: 150%;

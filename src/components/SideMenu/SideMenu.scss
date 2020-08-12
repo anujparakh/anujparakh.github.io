@@ -1,5 +1,7 @@
+@import 'styles/colors';
+
 .sidebar {
-    background-color: black;
+    background-color: $background-color-footer;
     position: fixed;
     top: 0;
     left:0;
@@ -11,7 +13,7 @@
 }
 
 .sidebar-item {
-    color: white;
+    color: $navbar-links-color;
     font-size: 150%;
     text-align: center;
     margin: 10px auto;
@@ -19,7 +21,7 @@
 }
 
 .sidebar-item:hover {
-    color: #61dafb;
+    color: $hover-color;
 }
 
 #first-item {

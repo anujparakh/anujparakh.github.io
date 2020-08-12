@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/ProjectView.css'
+import './ProjectView.scss'
 
 export default class ProjectView extends React.Component {
     constructor(props) {

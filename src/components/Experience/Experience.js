@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import ExperienceView from './ExperienceView'
-import '../css/Experience.css'
-import boeingLogo from '../img/boeinglogo.png'
-import niLogo from '../img/NILogo.jpg'
-import bioEyeLogo from '../img/BioEyeLogo.jpeg'
-import tamuLogo from '../img/tamuLogo.png'
+import ExperienceView from '../ExperienceView/ExperienceView'
+import './Experience.scss'
+import boeingLogo from '../../img/boeinglogo.png'
+import niLogo from '../../img/NILogo.jpg'
+import bioEyeLogo from '../../img/BioEyeLogo.jpeg'
+import tamuLogo from '../../img/tamuLogo.png'
 
 const boeingDescription = "I added features to a project that connects airplane systems to the ground using cloud technology while working in a team. I developed code in TypeScript working with Microsoft Azure and Cosmos DB using Node.js and restify."
 const utfDescription = "I worked as a UTF for the Physics department, where I helped students with their Engineering Physics 1 courses by explaining topics and solving problems."
@@ -37,7 +37,7 @@ export default class Experience extends React.Component {
     render() {
         return <div className="experience">
             <div style={{backgroundColor: '#61dafb'}} className="left-bar"></div>
-            <p className={this.state.fullScreen ? "heading" : "smallscreen-heading"}>Experiences</p>
+            <p className={this.state.fullScreen ? "heading" : "smallscreen-heading"}>Experience</p>
             <p className={this.state.fullScreen ? "subheading" : "smallscreen-subheading"} id="experience-subheading"><i>Click <a href="/Resume.pdf" target="_blank">here</a> to see my resume.</i></p>
             <ExperienceView jobTitle="Cabin and Network Systems Engineering Intern"
                 companyName="The Boeing Company"

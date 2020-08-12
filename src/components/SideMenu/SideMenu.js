@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
-import '../css/SideMenu.css'
+import './SideMenu.scss'
 
 export default class SideMenu extends React.Component {
     constructor(props) {
@@ -24,6 +24,13 @@ export default class SideMenu extends React.Component {
                 id='first-item'
                 onClick={this.props.onScreenClose}
             >Home</Link>
+            <Link to="about"
+                smooth={true}
+                offset={-60}
+                duration={500}
+                className='sidebar-item'
+                onClick={this.props.onScreenClose}
+            >About</Link>
             <Link to="projects"
                 smooth={true}
                 offset={-60}
@@ -37,14 +44,14 @@ export default class SideMenu extends React.Component {
                 duration={500}
                 className='sidebar-item'
                 onClick={this.props.onScreenClose}
-            >Experiences</Link>
-            <Link to="about"
+            >Experience</Link>
+            {/* <Link to="skills"
+                spy={true}
                 smooth={true}
                 offset={-60}
                 duration={500}
                 className='sidebar-item'
-                onClick={this.props.onScreenClose}
-            >About</Link>
+            >Skills</Link> */}
             <Link to="footer"
                 smooth={true}
                 offset={-60}
