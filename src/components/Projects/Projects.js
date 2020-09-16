@@ -83,7 +83,7 @@ export default class Projects extends React.Component {
                 demoText=" to see a demo of the amplifier."
                 ></ProjectView> */}
 
-                <ProjectView title="Trions Bulb Controller"
+                <ProjectView title="Triones Bulbs Controller"
                 description={trionesBulbControllerDescription}
                 githubLink="https://github.com/anujparakh/triones-bulbs-controller"
                 placeholderImage={trionesLogo}
