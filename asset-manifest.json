@@ -1,24 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.67028b09.chunk.css",
-    "main.js": "/static/js/main.3d99730d.chunk.js",
-    "main.js.map": "/static/js/main.3d99730d.chunk.js.map",
+    "main.js": "/static/js/main.2b7d111e.chunk.js",
+    "main.js.map": "/static/js/main.2b7d111e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.690794d7.js",
     "runtime-main.js.map": "/static/js/runtime-main.690794d7.js.map",
-    "static/js/2.11aa9780.chunk.js": "/static/js/2.11aa9780.chunk.js",
-    "static/js/2.11aa9780.chunk.js.map": "/static/js/2.11aa9780.chunk.js.map",
+    "static/js/2.8e14ae2e.chunk.js": "/static/js/2.8e14ae2e.chunk.js",
+    "static/js/2.8e14ae2e.chunk.js.map": "/static/js/2.8e14ae2e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ed94dd1f4b2f951e1ee18d9a33a87299.js": "/precache-manifest.ed94dd1f4b2f951e1ee18d9a33a87299.js",
+    "precache-manifest.3a4900868d712f173656349deddfe44d.js": "/precache-manifest.3a4900868d712f173656349deddfe44d.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.67028b09.chunk.css.map": "/static/css/main.67028b09.chunk.css.map",
-    "static/js/2.11aa9780.chunk.js.LICENSE.txt": "/static/js/2.11aa9780.chunk.js.LICENSE.txt",
+    "static/js/2.8e14ae2e.chunk.js.LICENSE.txt": "/static/js/2.8e14ae2e.chunk.js.LICENSE.txt",
     "static/media/Mits.png": "/static/media/Mits.944d30b5.png",
     "static/media/MitsVid.mp4": "/static/media/MitsVid.26603df2.mp4",
     "static/media/blendingImage.jpg": "/static/media/blendingImage.ea9789c6.jpg",
     "static/media/boeinglogo.png": "/static/media/boeinglogo.66653831.png",
+    "static/media/bulbcontrollerLogo.png": "/static/media/bulbcontrollerLogo.53cdc908.png",
     "static/media/lbb.png": "/static/media/lbb.bf6a9655.png",
     "static/media/me_newyork.png": "/static/media/me_newyork.fda6a014.png",
-    "static/media/packadvisorLogo.png": "/static/media/packadvisorLogo.385e8086.png",
+    "static/media/packadvisor.png": "/static/media/packadvisor.a5f7024b.png",
     "static/media/LandingPage.scss": "/static/media/portfoliowallpaper.fe08354d.png",
     "static/media/tamuLogo.png": "/static/media/tamuLogo.8ad950d9.png",
     "static/media/threeStageSpeaker.png": "/static/media/threeStageSpeaker.31e5a504.png",
@@ -26,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.690794d7.js",
-    "static/js/2.11aa9780.chunk.js",
+    "static/js/2.8e14ae2e.chunk.js",
     "static/css/main.67028b09.chunk.css",
-    "static/js/main.3d99730d.chunk.js"
+    "static/js/main.2b7d111e.chunk.js"
   ]
 }
