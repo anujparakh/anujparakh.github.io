@@ -9,7 +9,10 @@ import packadvisorImage from '../../img/packadvisor.png'
 import speakerImage from '../../img/threeStageSpeaker.png'
 import blendingImage from '../../img/blendingImage.jpg'
 import ultimateTTTImage from '../../img/ultimateTTT.png'
+import goveeImage from '../../img/govee-bt.png'
 
+const goveeDescription = "Simple Node module used to control Govee light strips over BLE. I couldn't find a npm package or any other kind of library that supported controlling Govee Bluetooth Lightstrips so I wrote a simple npm package to accomplish that." +
+                         "<br /><br />This package supports all possible functions on the lightstrip, including discovery, connection, brightness and color control. I also published the package on npm for people to use in smart home projects."
 const mitsDescription = "MITS is a pair of gloves that can be used to create different kinds of music. We used Arduino Nano 33 BLEs/LightBlue Bean to connect over bluetooth to a MacOS application that sends MIDI signals to a Digital Audio Workstation (DAW) like Reaper to change instruments and play the notes as required." +
                         "<br /><br />The glove has flex sensors and a force sensor to implement all the features of the glove. There are several modes currently: Strings, Piano and Drums.";
 const packadvisorDescription = "Packadvisor is a web application created to help people pack for trips. The app can help a user pack by providing information about the destination and the trip including weather, timezone change, currency conversions, translations etc. The user can also create packing lists and login using Google to save information." +
@@ -54,6 +57,13 @@ export default class Projects extends React.Component {
                 <i>(Checkout my <a href="https://www.github.com/anujparakh" target="_blank">GitHub</a> for all of my projects)</i>
             </p>
             <div className="projects-collection">
+                <ProjectView title={"govee-bt-lightstrips"}
+                description={goveeDescription}
+                githubLink="https://github.com/anujparakh/govee-bt-lightstrips"
+                placeholderImage={goveeImage}
+                date="June 2021"
+                mobileWidth={this.props.mobileWidth}
+                />
                 <ProjectView title={"Multi-Instrumental-Tactile-Synthesizer"}
                 description={mitsDescription}
                 githubLink="https://www.github.com/anujparakh/multi-instrumental-tactile-synthesizer"
@@ -74,14 +84,6 @@ export default class Projects extends React.Component {
                 demoText="to try out Packadvisor."
                 mobileWidth={this.props.mobileWidth}>
                 </ProjectView>
-
-                {/* <ProjectView title="Three Stage Speaker Amplifier"
-                description={threeStageSpeakerDescription}
-                date="November 2019"
-                placeholderImage={speakerImage}
-                demoLink="https://www.youtube.com/watch?v=v25CMmxGf4E&feature=youtu.be"
-                demoText=" to see a demo of the amplifier."
-                ></ProjectView> */}
 
                 <ProjectView title="Triones Bulbs Controller"
                 description={trionesBulbControllerDescription}

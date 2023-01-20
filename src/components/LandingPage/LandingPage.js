@@ -32,7 +32,7 @@ export default class LandingPage extends React.Component {
             <div className="left-bar" style={{backgroundColor: '#61dafb'}}></div>
             {/* <img src={myphoto}></img> */}
             <p className="mainheading">Hi, I'm Anuj Parakh</p>
-            <p className="secondheading">A Computer Engineer</p>
+            <p className="secondheading">Software Engineer</p>
             <div className="links-holder">
                 <a href="https://www.github.com/anujparakh" target="_blank" className="fa fa-github"></a>
                 <a href="https://www.linkedin.com/in/anuj-parakh" target="_blank" className="fa fa-linkedin-square"></a>

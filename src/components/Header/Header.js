@@ -57,13 +57,6 @@ export default class Header extends React.Component {
                 duration={500}
                 className='navbar__item'
             >About</Link>
-            <Link to="projects"
-                spy={true}
-                smooth={true}
-                offset={-60}
-                duration={500}
-                className='navbar__item'
-            >Projects</Link>
             <Link to="experience"
                 spy={true}
                 smooth={true}
@@ -71,6 +64,13 @@ export default class Header extends React.Component {
                 duration={500}
                 className='navbar__item'
             >Experience</Link>
+            <Link to="projects"
+                spy={true}
+                smooth={true}
+                offset={-60}
+                duration={500}
+                className='navbar__item'
+            >Projects</Link>
             {/* <Link to="skills"
                 spy={true}
                 smooth={true}

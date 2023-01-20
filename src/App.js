@@ -44,8 +44,8 @@ class App extends React.Component {
                 <Header isFixed={this.state.headerFixed} mobileWidth={mobileWidth}></Header>
                 <LandingPage isAtTop={!this.state.headerFixed} mobileWidth={mobileWidth}></LandingPage>
                 <About mobileWidth={mobileWidth}></About>
-                <Projects mobileWidth={mobileWidth}></Projects>
                 <Experience mobileWidth={mobileWidth}></Experience>
+                <Projects mobileWidth={mobileWidth}></Projects>
                 {/* <Skills></Skills> */}
                 <Footer mobileWidth={mobileWidth}></Footer>
             </div>

@@ -35,7 +35,7 @@ export default class ProjectView extends React.Component {
 
     createGithubLink = () => {
         if (this.props.githubLink) {
-            return <a href={this.props.githubLink} className="fa fa-github" id="projectGithub" target="_blank"></a>
+            return <a href={this.props.githubLink} className="fa fa-github gh-icon" id="projectGithub" target="_blank"></a>
         }
     }
 
@@ -53,7 +53,7 @@ export default class ProjectView extends React.Component {
             <div className={this.state.fullScreen ? "textCol" : "smallscreen-textCol"}>
                 <div className={this.state.fullScreen ? "title-holder" : "smallscreen-title-holder"}>
                     {this.createGithubLink()}
-                    <p className='title'>{this.props.title} </p>
+                    <a href={this.props.githubLink} className='title'>{this.props.title} </a>
                 </div>
                 <p className="project-date"><i>{this.props.date}</i></p>
                 <p className='description' dangerouslySetInnerHTML={{ __html: this.props.description }}></p>

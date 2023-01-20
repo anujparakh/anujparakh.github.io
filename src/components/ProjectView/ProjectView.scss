@@ -6,7 +6,7 @@
     padding: 20px;
     max-width: 1000px;
     margin-bottom: 20px;
-    align-items: center;
+    // align-items: center;
 }
 
 .smallscreen-project-view {
@@ -64,9 +64,13 @@
 
 .title {
     color: $small-heading-color;
+    text-decoration: none;
     font-size: 2em;
     margin-top: 0;
     margin-bottom: 0;
+}
+.title:hover {
+    color: $small-heading-hover-color;
 }
 
 .smallscreen-title {
@@ -85,6 +89,10 @@
     align-items: center;
     margin: 0;
     text-decoration: none;
+}
+
+#projectGithub:hover {
+    color: $small-heading-hover-color;
 }
 
 .project-date {
