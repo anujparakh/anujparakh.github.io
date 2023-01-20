@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c66c513.chunk.css",
-    "main.js": "/static/js/main.44ed43fd.chunk.js",
-    "main.js.map": "/static/js/main.44ed43fd.chunk.js.map",
+    "main.css": "/static/css/main.67c35bf7.chunk.css",
+    "main.js": "/static/js/main.5ac4ba2c.chunk.js",
+    "main.js.map": "/static/js/main.5ac4ba2c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.690794d7.js",
     "runtime-main.js.map": "/static/js/runtime-main.690794d7.js.map",
-    "static/js/2.8e14ae2e.chunk.js": "/static/js/2.8e14ae2e.chunk.js",
-    "static/js/2.8e14ae2e.chunk.js.map": "/static/js/2.8e14ae2e.chunk.js.map",
+    "static/js/2.9f4aece1.chunk.js": "/static/js/2.9f4aece1.chunk.js",
+    "static/js/2.9f4aece1.chunk.js.map": "/static/js/2.9f4aece1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.657ddb23ad4a8655156f8e68a9ba9614.js": "/precache-manifest.657ddb23ad4a8655156f8e68a9ba9614.js",
+    "precache-manifest.223a618a43cea635ff4f488ac47cf21a.js": "/precache-manifest.223a618a43cea635ff4f488ac47cf21a.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.8c66c513.chunk.css.map": "/static/css/main.8c66c513.chunk.css.map",
-    "static/js/2.8e14ae2e.chunk.js.LICENSE.txt": "/static/js/2.8e14ae2e.chunk.js.LICENSE.txt",
+    "static/css/main.67c35bf7.chunk.css.map": "/static/css/main.67c35bf7.chunk.css.map",
+    "static/js/2.9f4aece1.chunk.js.LICENSE.txt": "/static/js/2.9f4aece1.chunk.js.LICENSE.txt",
     "static/media/Mits.png": "/static/media/Mits.944d30b5.png",
     "static/media/MitsVid.mp4": "/static/media/MitsVid.26603df2.mp4",
     "static/media/blendingImage.jpg": "/static/media/blendingImage.ea9789c6.jpg",
     "static/media/boeinglogo.png": "/static/media/boeinglogo.66653831.png",
     "static/media/bulbcontrollerLogo.png": "/static/media/bulbcontrollerLogo.53cdc908.png",
+    "static/media/govee-bt.png": "/static/media/govee-bt.dc7a84ea.png",
     "static/media/lbb.png": "/static/media/lbb.bf6a9655.png",
     "static/media/me_newyork.png": "/static/media/me_newyork.fda6a014.png",
     "static/media/packadvisor.png": "/static/media/packadvisor.a5f7024b.png",
@@ -27,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.690794d7.js",
-    "static/js/2.8e14ae2e.chunk.js",
-    "static/css/main.8c66c513.chunk.css",
-    "static/js/main.44ed43fd.chunk.js"
+    "static/js/2.9f4aece1.chunk.js",
+    "static/css/main.67c35bf7.chunk.css",
+    "static/js/main.5ac4ba2c.chunk.js"
   ]
 }
