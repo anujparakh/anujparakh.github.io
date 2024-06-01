@@ -344,10 +344,15 @@ const HeadNav: FC = () => {
 
   return (
     <>
-      <Navbar className="h-max max-w-full rounded-xl bg-gray-900 px-8 py-4 my-5 mb-10 border border-gray-800/80">
+      <Navbar
+        className="h-max max-w-full rounded-xl bg-gray-900 px-8 py-4 my-5 mb-10 border border-gray-800/80"
+        placeholder={undefined}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
+      >
         <div className="flex items-center justify-between text-white w-full">
-          <span className="text-xl font-semibold">AP</span>
-          <div className="flex items-center gap-10">
+          <span className="text-xl font-semibold pr-5">AP</span>
+          <div className="flex items-center justify-center gap-10">
             {HEADER_LINKS.map((header) => (
               <a
                 href={header.link}
@@ -361,6 +366,9 @@ const HeadNav: FC = () => {
               className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent md:hidden"
               ripple={false}
               onClick={() => setOpenNav(!openNav)}
+              placeholder={undefined}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
             >
               {openNav ? (
                 <svg
