@@ -90,7 +90,9 @@ export const WORK_EXPERIENCES: Array<WorkExperience> = [
     starting: "Jan 2024",
     ending: "Present",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      "Played a key role in the development and maintenance of a multi-client eCommerce platform, driving an annual revenue of over $10 million.",
+      "Functioned as a full-stack developer, leveraging Next.js, Tailwind CSS, and Java Spring Boot to implement a range of features supporting the eCommerce platform's operations and performance.",
+      "Spearheaded the implementation of features such as last-mile delivery notifications and third-party vendor integrations for catalog, inventory, and order updates, enhancing the functionality and efficiency of the eCommerce platform."
     ],
   },
   {
