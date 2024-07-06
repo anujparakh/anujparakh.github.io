@@ -12,7 +12,10 @@ const config: Config = {
     extend: {
       colors: {
         primary: '#61dafb',
-        secondary: '#D6FFFF'
+        secondary: '#D6FFFF',
+        'header-background': '#1E1E1E',
+        'section-background': '#283238',
+        text: '#EEEEEE'
       }
     },
   },

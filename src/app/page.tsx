@@ -47,7 +47,7 @@ const Icon = (id: number, open: number): JSX.Element => {
 
 const Home: FC = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center p-4 sm:px-12 pt-0 pb-10">
+    <main className="flex min-h-screen flex-col items-center p-4 sm:px-12 pt-0 pb-10 text-text">
       <div className="flex flex-col items-center w-full max-w-screen-sm lg:max-w-screen-md">
         {/* Header Bar */}
         <HeadNav />
@@ -63,7 +63,7 @@ const Home: FC = () => {
           {/* Heading */}
           <div>
             <div className="items-start flex w-full">
-              <h1 className="text-left text-3xl">Hi, I'm Anuj!</h1>
+              <h1 className="text-left text-4xl">Hi, I'm Anuj!</h1>
             </div>
 
             {/* Message */}
@@ -105,7 +105,7 @@ const Home: FC = () => {
           Work Experience
         </h2>
 
-        <div className=" bg-blue-gray-900 rounded-xl px-5 pb-2">
+        <div className=" bg-section-background rounded-xl px-5 pb-2">
           <WorkExperiences />
         </div>
 
@@ -114,7 +114,7 @@ const Home: FC = () => {
           Skills
         </h2>
 
-        <div className="bg-blue-gray-900 rounded-xl px-5 pb-2">
+        <div className="bg-section-background rounded-xl px-5 pb-2">
           {/* Languages */}
           <h2 className="w-full text-left text-xl mt-5 mb-5">
             Programming Languages
@@ -166,7 +166,7 @@ const Home: FC = () => {
         <h2 id="projects" className="w-full text-left text-3xl mt-10 mb-10">
           Personal Projects
         </h2>
-        <div className=" bg-blue-gray-900 rounded-xl px-5 pb-2">
+        <div className=" bg-section-background rounded-xl px-5 pb-2">
           <PersonalProjects />
         </div>
 
@@ -345,7 +345,7 @@ const HeadNav: FC = () => {
   return (
     <>
       <Navbar
-        className="h-max max-w-full rounded-xl bg-gray-900 px-8 py-4 my-5 mb-10 border border-gray-800/80"
+        className="h-max max-w-full rounded-xl bg-header-background px-8 py-4 my-5 mb-10 border border-gray-800/80"
         placeholder={undefined}
         onPointerEnterCapture={undefined}
         onPointerLeaveCapture={undefined}
