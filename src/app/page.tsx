@@ -56,7 +56,7 @@ const Home: FC = () => {
         <div className="flex flex-col lg:flex-row gap-8 mb-4 items-center">
           <img
             className="rounded-full object-cover size-72 lg:size-64"
-            src="/me_newyork.png"
+            src="/me_california.jpeg"
             alt="Anuj"
           />
 
