@@ -85,7 +85,7 @@ export const PERSONAL_PROJECTS: Array<PersonalProject> = [
 export const WORK_EXPERIENCES: Array<WorkExperience> = [
   {
     icon: "/img/credera-logo.png",
-    title: "Senior Technology Consultant",
+    title: "Senior Full Stack Engineering Consultant",
     company: "Credera",
     starting: "Jan 2024",
     ending: "Present",
@@ -98,7 +98,7 @@ export const WORK_EXPERIENCES: Array<WorkExperience> = [
   },
   {
     icon: "/img/credera-logo.png",
-    title: "Technology Consultant",
+    title: "Full Stack Engineering Consultant",
     company: "Credera",
     starting: "Sep 2021",
     ending: "Jan 2024",
