@@ -90,6 +90,7 @@ export const WORK_EXPERIENCES: Array<WorkExperience> = [
     starting: "Jan 2024",
     ending: "Present",
     description: [
+      "Led a cross-functional pod of full-stack engineers responsible for designing, building, and scaling an eCommerce storefront. In this role I balanced hands-on technical work with leadership — mentoring engineers, guiding architectural decisions, and partnering with product stakeholders to shape roadmaps that deliver measurable business impact.",
       "Played a key role in the development and maintenance of a multi-client eCommerce platform, driving an annual revenue of over $10 million.",
       "Functioned as a full-stack developer, leveraging Next.js, Tailwind CSS, and Java Spring Boot to implement a range of features supporting the eCommerce platform's operations and performance.",
       "Spearheaded the implementation of features such as last-mile delivery notifications and third-party vendor integrations for catalog, inventory, and order updates, enhancing the functionality and efficiency of the eCommerce platform."
