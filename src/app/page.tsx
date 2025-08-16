@@ -68,7 +68,7 @@ const Home: FC = () => {
 
             {/* Message */}
             <p className="mt-8 font-light">
-              I'm a Senior Technology Consultant at Credera. I work in a variety
+              I'm a Senior Full Stack Engineering Consultant at Credera. I work in a variety
               of technologies, focusing on implementing full stack applications
               for companies of different sizes. Outside of work, you will find
               me gaming, reading, or playing pickleball.
