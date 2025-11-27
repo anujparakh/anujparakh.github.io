@@ -1,0 +1,136 @@
+<svg
+  width="120"
+  height="120"
+  viewBox="0 0 120 120"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  className="drop-shadow-lg"
+>
+  {/* Monitor/Screen */}
+  <rect
+    x="20"
+    y="30"
+    width="80"
+    height="50"
+    rx="4"
+    stroke="url(#gradient1)"
+    strokeWidth="3"
+    fill="none"
+  />
+  {/* Screen glow effect */}
+  <rect
+    x="25"
+    y="35"
+    width="70"
+    height="40"
+    rx="2"
+    fill="url(#screenGlow)"
+    opacity="0.6"
+  />
+  {/* Play icon inside screen */}
+  <path d="M 52 45 L 52 65 L 68 55 Z" fill="#06b6d4" opacity="0.8" />
+
+  {/* Monitor stand */}
+  <rect x="55" y="80" width="10" height="8" fill="url(#gradient1)" />
+  {/* Monitor base */}
+  <rect x="45" y="88" width="30" height="3" rx="1.5" fill="url(#gradient1)" />
+
+  {/* WiFi waves - curved arcs */}
+  <path
+    d="M 85 50 Q 100 50 105 40"
+    stroke="#06b6d4"
+    strokeWidth="2.5"
+    fill="none"
+    strokeLinecap="round"
+    opacity="0.9"
+  >
+    <animate
+      attributeName="opacity"
+      values="0.3;0.9;0.3"
+      dur="2s"
+      repeatCount="indefinite"
+    />
+  </path>
+  <path
+    d="M 85 55 Q 105 55 112 40"
+    stroke="#06b6d4"
+    strokeWidth="2.5"
+    fill="none"
+    strokeLinecap="round"
+    opacity="0.6"
+  >
+    <animate
+      attributeName="opacity"
+      values="0.2;0.7;0.2"
+      dur="2s"
+      begin="0.3s"
+      repeatCount="indefinite"
+    />
+  </path>
+  <path
+    d="M 85 60 Q 110 60 118 40"
+    stroke="#06b6d4"
+    strokeWidth="2.5"
+    fill="none"
+    strokeLinecap="round"
+    opacity="0.4"
+  >
+    <animate
+      attributeName="opacity"
+      values="0.1;0.5;0.1"
+      dur="2s"
+      begin="0.6s"
+      repeatCount="indefinite"
+    />
+  </path>
+
+  {/* Mobile device */}
+  <rect
+    x="5"
+    y="65"
+    width="25"
+    height="40"
+    rx="3"
+    stroke="url(#gradient2)"
+    strokeWidth="2.5"
+    fill="#334155"
+  />
+  {/* Mobile screen */}
+  <rect
+    x="8"
+    y="70"
+    width="19"
+    height="28"
+    rx="1"
+    fill="url(#mobileScreen)"
+  />
+  {/* Touch indicator dots */}
+  <circle cx="17.5" cy="100" r="1.5" fill="#06b6d4" opacity="0.8">
+    <animate
+      attributeName="opacity"
+      values="0.3;1;0.3"
+      dur="1.5s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  {/* Gradients */}
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#06b6d4" />
+      <stop offset="100%" stopColor="#0891b2" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#8b5cf6" />
+      <stop offset="100%" stopColor="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="screenGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#06b6d4" />
+      <stop offset="100%" stopColor="#0e7490" />
+    </linearGradient>
+    <linearGradient id="mobileScreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#8b5cf6" opacity="0.4" />
+      <stop offset="100%" stopColor="#1f2640" />
+    </linearGradient>
+  </defs>
+</svg>

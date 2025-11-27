@@ -68,10 +68,10 @@ const Home: FC = () => {
 
             {/* Message */}
             <p className="mt-8 font-light">
-              I'm a Senior Full Stack Engineering Consultant at Credera. I work in a variety
-              of technologies, focusing on implementing full stack applications
-              for companies of different sizes. Outside of work, you will find
-              me gaming, reading, or playing pickleball.
+              I'm a Senior Full Stack Engineering Consultant at Credera. I work
+              in a variety of technologies, focusing on implementing full stack
+              applications for companies of different sizes. Outside of work,
+              you will find me gaming, reading, or playing pickleball.
             </p>
             {/* Social Stuff */}
             <div className="flex flex-row w-full items-start mt-6 gap-6">
@@ -277,7 +277,7 @@ const PersonalProjects: FC = () => {
                 <div className="flex flex-col md:flex-row md:items-center gap-5 justify-between">
                   <img
                     src={project.image}
-                    className="rounded-md w-32 border-blue-gray-200 border-[0.5px]"
+                    className="rounded-md w-32 border-blue-gray-200 border-[0.5px] bg-blue-gray-800"
                   />
                   <div className="flex flex-col">
                     <p className="text-lg">{project.title}</p>

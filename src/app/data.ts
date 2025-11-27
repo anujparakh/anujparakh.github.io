@@ -19,6 +19,20 @@ type PersonalProject = {
 
 export const PERSONAL_PROJECTS: Array<PersonalProject> = [
   {
+    title: "The Media Center",
+    subtitle:
+      "Wireless remote control application for managing media playback and navigation from mobile devices",
+    image: "/img/media-center.svg",
+    date: "November 2024",
+    githubLink: "https://github.com/anujparakh/the-media-center",
+    demoLink: "",
+    description: [
+      "The Media Center is a wireless remote control application that enables users to manage media playback and interface navigation from their mobile devices over a local network. Built with NestJS backend and Preact frontend, it provides comprehensive media controls including play/pause, skip, mute, and fullscreen functionality.",
+      "",
+      "Features include a full touchpad with click, double-click, drag, and scroll capabilities, keyboard support for text input and shortcuts, and quick access to streaming services like Netflix and YouTube. The application uses Socket.IO for WebSocket communication and robotjs for system automation, with responsive design optimized for smartphones.",
+    ],
+  },
+  {
     title: "MITS",
     subtitle:
       "Multi-Instrumental-Tactile-Synthesizer is a pair of gloves that can be used to create different kinds of music.",
