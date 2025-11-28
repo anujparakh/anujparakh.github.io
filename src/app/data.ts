@@ -33,6 +33,20 @@ export const PERSONAL_PROJECTS: Array<PersonalProject> = [
     ],
   },
   {
+    title: "Homescreen",
+    subtitle:
+      "Customizable homepage with rotating backgrounds and configurable widgets",
+    image: "/img/homescreen.svg",
+    date: "November 2024",
+    githubLink: "https://github.com/anujparakh/homescreen",
+    demoLink: "https://homescreen.anujparakh.dev",
+    description: [
+      "Homescreen is a minimal web application designed as a customizable personal homescreen with dynamic visual elements. Built with TypeScript, Preact, and Tailwind CSS, it features rotating backgrounds curated from Chromecast backgrounds and a settings panel to configure the widgets.",
+      "",
+      "The application includes three configurable widgets: clock display, date information, and weather data. User preferences are persisted using local storage, with a dedicated settings modal for configuration.",
+    ],
+  },
+  {
     title: "MITS",
     subtitle:
       "Multi-Instrumental-Tactile-Synthesizer is a pair of gloves that can be used to create different kinds of music.",
@@ -107,7 +121,7 @@ export const WORK_EXPERIENCES: Array<WorkExperience> = [
       "Led a cross-functional pod of full-stack engineers responsible for designing, building, and scaling an eCommerce storefront. In this role I balanced hands-on technical work with leadership — mentoring engineers, guiding architectural decisions, and partnering with product stakeholders to shape roadmaps that deliver measurable business impact.",
       "Played a key role in the development and maintenance of a multi-client eCommerce platform, driving an annual revenue of over $10 million.",
       "Functioned as a full-stack developer, leveraging Next.js, Tailwind CSS, and Java Spring Boot to implement a range of features supporting the eCommerce platform's operations and performance.",
-      "Spearheaded the implementation of features such as last-mile delivery notifications and third-party vendor integrations for catalog, inventory, and order updates, enhancing the functionality and efficiency of the eCommerce platform."
+      "Spearheaded the implementation of features such as last-mile delivery notifications and third-party vendor integrations for catalog, inventory, and order updates, enhancing the functionality and efficiency of the eCommerce platform.",
     ],
   },
   {

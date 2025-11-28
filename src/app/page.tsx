@@ -295,6 +295,14 @@ const PersonalProjects: FC = () => {
                   </>
                 ))}
               </div>
+              {project.demoLink && project.demoLink !== "" && (
+                <div className="flex gap-2 items-start text-2xl font-light text-primary hover:text-secondary mt-4">
+                  <i className="fa fa-external-link-square" />
+                  <a className="text-lg" href={project.demoLink}>
+                    Try it Out
+                  </a>
+                </div>
+              )}
               <div className="flex gap-2 items-start text-2xl font-light text-primary hover:text-secondary mt-4">
                 <i className="fa fa-github" />
                 <a className="text-lg" href={project.githubLink}>
