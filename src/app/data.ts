@@ -247,6 +247,9 @@ export const TECHNOLOGIES = [
 export const TOOLS = [
   "Git",
   "VSCode",
+  "Copilot",
+  "Claude Code",
+  "Cursor",
   "Bash",
   "IntelliJ",
   "Postman",
