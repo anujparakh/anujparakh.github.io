@@ -20,16 +20,15 @@ type PersonalProject = {
 export const PERSONAL_PROJECTS: Array<PersonalProject> = [
   {
     title: "webtools",
-    subtitle:
-      "A collection of simple browser-based utilities for developers — no installation or account required",
+    subtitle: "A collection of simple browser-based utilities for developers",
     image: "/img/webtools.svg",
     date: "2025",
     githubLink: "https://github.com/anujparakh/webtools",
     demoLink: "https://webtools.anujparakh.dev",
     description: [
-      "webtools is a browser-based utility application providing a suite of lightweight developer tools. Built with TypeScript, Vite, and Tailwind CSS, it runs entirely in the browser with no installation or account creation needed.",
+      "webtools is a browser-based utility providing a suite of lightweight developer tools. Built with TypeScript, Vite, and Tailwind CSS, it runs entirely in the browser with no installation or account creation needed.",
       "",
-      "The toolkit includes a URL Encoder/Decoder for encoding and decoding URL strings and query parameters, a URL Builder for constructing URLs with editable query parameters supporting JSON values, a JSON Viewer for pretty-printing, validating, sorting keys, and folding JSON with syntax highlighting, and a JWT Viewer for decoding and inspecting JWT tokens to view header, payload, and signature components.",
+      "The tools includes a URL Encoder/Decoder for encoding and decoding URL strings and query parameters, a URL Builder for constructing URLs with editable query parameters supporting JSON values, a JSON Viewer for pretty-printing, validating, sorting keys, and folding JSON with syntax highlighting, and a JWT Viewer for decoding and inspecting JWT tokens to view header, payload, and signature components.",
     ],
   },
   {
