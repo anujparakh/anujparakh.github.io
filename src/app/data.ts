@@ -126,10 +126,21 @@ export const PERSONAL_PROJECTS: Array<PersonalProject> = [
 export const WORK_EXPERIENCES: Array<WorkExperience> = [
   {
     icon: "/img/credera-logo.png",
+    title: "Software Engineering Architect",
+    company: "Credera",
+    starting: "Mar 2026",
+    ending: "Present",
+    description: [
+      "Led a cross-functional pod of full-stack engineers responsible for designing, building, and scaling an eCommerce storefront. In this role I balanced hands-on technical work with leadership — mentoring engineers, guiding architectural decisions, and partnering with product stakeholders to shape roadmaps that deliver measurable business impact.",
+      "Played a key role in the development and maintenance of a multi-client eCommerce platform, driving an annual revenue of over $10 million.",
+    ],
+  },
+  {
+    icon: "/img/credera-logo.png",
     title: "Senior Full Stack Engineering Consultant",
     company: "Credera",
     starting: "Jan 2024",
-    ending: "Present",
+    ending: "Mar 2026",
     description: [
       "Led a cross-functional pod of full-stack engineers responsible for designing, building, and scaling an eCommerce storefront. In this role I balanced hands-on technical work with leadership — mentoring engineers, guiding architectural decisions, and partnering with product stakeholders to shape roadmaps that deliver measurable business impact.",
       "Played a key role in the development and maintenance of a multi-client eCommerce platform, driving an annual revenue of over $10 million.",

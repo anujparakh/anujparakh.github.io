@@ -68,8 +68,8 @@ const Home: FC = () => {
 
             {/* Message */}
             <p className="mt-8 font-light">
-              I'm a Senior Full Stack Engineering Consultant at Credera. I work
-              in a variety of technologies, focusing on implementing full stack
+              I'm a Software Engineering Architect at Credera. I work in a
+              variety of technologies, focusing on implementing full stack
               applications for companies of different sizes. Outside of work,
               you will find me gaming, reading, or playing pickleball.
             </p>
@@ -322,7 +322,7 @@ const HeadNav: FC = () => {
   useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 768 && setOpenNav(false)
+      () => window.innerWidth >= 768 && setOpenNav(false),
     );
   });
 
