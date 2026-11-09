@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Anuj's Apps</title>
+  <meta name="description" content="Quick launcher for Anuj Parakh's web apps.">
+  <meta name="theme-color" content="#16131F" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F3F1F9" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL@-15..0,300..900,0..1&display=swap" rel="stylesheet">
+  <script>
+    // Apply saved theme before paint (falls back to device setting).
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <style>
+    :root {
+      --bg: #16131F;
+      --surface: #211D2E;
+      --surface-press: #2A2539;
+      --text: #F1EEF7;
+      --muted: #9D97B0;
+      --ring: #C4A7FF;
+      color-scheme: dark;
+    }
+    @media (prefers-color-scheme: light) {
+      :root:not([data-theme="dark"]) {
+        --bg: #F3F1F9;
+        --surface: #FFFFFF;
+        --surface-press: #ECE8F6;
+        --text: #1C1828;
+        --muted: #6B6580;
+        --ring: #6D4BD8;
+        color-scheme: light;
+      }
+    }
+    :root[data-theme="light"] {
+      --bg: #F3F1F9;
+      --surface: #FFFFFF;
+      --surface-press: #ECE8F6;
+      --text: #1C1828;
+      --muted: #6B6580;
+      --ring: #6D4BD8;
+      color-scheme: light;
+    }
+
+    * { box-sizing: border-box; margin: 0; }
+
+    body {
+      min-height: 100dvh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Recursive", system-ui, sans-serif;
+      font-variation-settings: "CASL" 0.5;
+      -webkit-font-smoothing: antialiased;
+      -webkit-tap-highlight-color: transparent;
+      transition: background-color .3s, color .3s;
+    }
+
+    main {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: max(28px, env(safe-area-inset-top)) 16px max(40px, env(safe-area-inset-bottom));
+    }
+
+    /* ---------- Header ---------- */
+    header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    h1 {
+      font-size: clamp(2.6rem, 11vw, 4.2rem);
+      line-height: .95;
+      font-weight: 850;
+      letter-spacing: -0.03em;
+      font-variation-settings: "CASL" 1;
+    }
+    .intro {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.45;
+    }
+
+    .theme-toggle {
+      flex: none;
+      width: 52px;
+      height: 52px;
+      border: 0;
+      border-radius: 50%;
+      background: var(--surface);
+      color: var(--text);
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: transform .4s cubic-bezier(.3, 1.6, .5, 1), background-color .3s;
+    }
+    .theme-toggle:active { transform: scale(.88) rotate(-30deg); }
+
+    /* ---------- App tiles ---------- */
+    .apps {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 12px;
+    }
+    @media (min-width: 640px) {
+      .apps { grid-template-columns: 1fr 1fr; gap: 16px; }
+    }
+
+    .app {
+      --c: #C4A7FF;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      min-height: 104px;
+      padding: 18px 20px 18px 18px;
+      border-radius: 28px;
+      background: var(--surface);
+      color: inherit;
+      text-decoration: none;
+      transition: transform .35s cubic-bezier(.3, 1.6, .5, 1), background-color .2s;
+      animation: pop-in .55s cubic-bezier(.3, 1.5, .5, 1) both;
+      animation-delay: calc(var(--i) * 60ms + 120ms);
+    }
+    .app:active { transform: scale(.96); background: var(--surface-press); }
+    @media (hover: hover) {
+      .app:hover .blob { transform: rotate(-8deg) scale(1.06); border-radius: 42% 58% 55% 45%; }
+    }
+    .app:focus-visible, .theme-toggle:focus-visible {
+      outline: 3px solid var(--ring);
+      outline-offset: 3px;
+    }
+
+    .blob {
+      flex: none;
+      width: 68px;
+      height: 68px;
+      display: grid;
+      place-items: center;
+      font-size: 2.1rem;
+      background: var(--c);
+      border-radius: 38% 62% 46% 54% / 52% 44% 56% 48%;
+      transition: transform .45s cubic-bezier(.3, 1.6, .5, 1), border-radius .45s;
+    }
+
+    .name {
+      display: block;
+      font-size: 1.35rem;
+      font-weight: 750;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      font-variation-settings: "CASL" 0.6;
+      transition: font-variation-settings .3s;
+    }
+    .app:active .name { font-variation-settings: "CASL" 1; }
+    .desc {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: .95rem;
+      line-height: 1.4;
+    }
+
+    footer {
+      margin-top: 36px;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+    footer a {
+      color: var(--text);
+      text-underline-offset: 3px;
+      text-decoration-thickness: 2px;
+      text-decoration-color: var(--ring);
+    }
+
+    /* ---------- Launch flood ---------- */
+    .flood {
+      position: fixed;
+      left: 0; top: 0;
+      width: 20px; height: 20px;
+      margin: -10px 0 0 -10px;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: scale(0);
+      z-index: 10;
+    }
+    .flood.go { transition: transform .42s cubic-bezier(.6, 0, .4, 1); }
+
+    @keyframes pop-in {
+      from { opacity: 0; transform: translateY(18px) scale(.94); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>Anuj's<br>apps</h1>
+        <p class="intro">Tap one to open it.</p>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme"></button>
+    </header>
+
+    <ul class="apps" id="apps"></ul>
+
+    <footer>
+      Made by <a href="https://anujparakh.dev">Anuj Parakh</a>. Code on <a href="https://github.com/anujparakh">GitHub</a>.
+    </footer>
+  </main>
+
+  <div class="flood" aria-hidden="true"></div>
+
+  <script>
+    // ============================================================
+    //  EDIT YOUR APPS HERE
+    //  name: title on the tile · url: where it opens
+    //  description: one short line · emoji: icon · color: blob color
+    // ============================================================
+    const APPS = [
+      { name: "Catan Board Generator", url: "https://catan.anujparakh.dev",       emoji: "🎲", color: "#FFD15C", description: "Shuffle up a fresh, balanced board for game night." },
+      { name: "Dumplings",             url: "https://dumplings.anujparakh.dev",   emoji: "🥟", color: "#FF8FA3", description: "A map of dumpling spots worth the trip." },
+      { name: "Splitsies",             url: "https://splitsies.anujparakh.dev",   emoji: "💸", color: "#6EE7B7", description: "Track shared expenses and see who owes who." },
+      { name: "Web Tools",             url: "https://webtools.anujparakh.dev",    emoji: "🧰", color: "#7CC4FF", description: "Handy browser utilities for developers." },
+      { name: "Homescreen",            url: "https://homescreen.anujparakh.dev",  emoji: "🏠", color: "#C4A7FF", description: "A simple, clean start page for your browser." },
+      { name: "Family Trees",          url: "https://family.anujparakh.dev",      emoji: "🌳", color: "#A3E07C", description: "View and edit your family tree." },
+    ];
+
+    // ---------- Render tiles ----------
+    const list = document.getElementById('apps');
+    list.innerHTML = APPS.map((app, i) => `
+      <li>
+        <a class="app" href="${app.url}" style="--c:${app.color}; --i:${i}">
+          <span class="blob" aria-hidden="true">${app.emoji}</span>
+          <span>
+            <span class="name">${app.name}</span>
+            <span class="desc">${app.description}</span>
+          </span>
+        </a>
+      </li>`).join('');
+
+    // ---------- Launch: color floods out from the tap, then open ----------
+    const flood = document.querySelector('.flood');
+    const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+
+    list.addEventListener('click', (e) => {
+      const tile = e.target.closest('.app');
+      if (!tile || reduceMotion.matches || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+      e.preventDefault();
+
+      const r = tile.getBoundingClientRect();
+      const x = e.clientX || r.left + r.width / 2;
+      const y = e.clientY || r.top + r.height / 2;
+      const reach = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
+
+      flood.style.background = getComputedStyle(tile).getPropertyValue('--c');
+      flood.style.left = x + 'px';
+      flood.style.top = y + 'px';
+      flood.classList.add('go');
+      flood.style.transform = `scale(${reach / 10 + 1})`;
+      setTimeout(() => { location.href = tile.href; }, 380);
+    });
+
+    // Reset the flood when coming back with the browser's back button.
+    addEventListener('pageshow', () => {
+      flood.classList.remove('go');
+      flood.style.transform = 'scale(0)';
+    });
+
+    // ---------- Theme toggle (follows device until you pick one) ----------
+    const root = document.documentElement;
+    const toggle = document.querySelector('.theme-toggle');
+    const deviceDark = matchMedia('(prefers-color-scheme: dark)');
+    const isDark = () => (root.dataset.theme || (deviceDark.matches ? 'dark' : 'light')) === 'dark';
+    const paintIcon = () => { toggle.textContent = isDark() ? '🌙' : '☀️'; };
+
+    toggle.addEventListener('click', () => {
+      const next = isDark() ? 'light' : 'dark';
+      // Choosing the device's own setting clears the override, so it keeps following the device.
+      if ((next === 'dark') === deviceDark.matches) delete root.dataset.theme;
+      else root.dataset.theme = next;
+      try { root.dataset.theme ? localStorage.setItem('theme', next) : localStorage.removeItem('theme'); } catch (e) {}
+      paintIcon();
+    });
+    deviceDark.addEventListener('change', paintIcon);
+    paintIcon();
+  </script>
+</body>
+</html>
