@@ -10,7 +10,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL@-15..0,300..900,0..1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   <script>
     // Apply saved theme before paint (falls back to device setting).
     try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
@@ -52,8 +52,7 @@
       min-height: 100dvh;
       background: var(--bg);
       color: var(--text);
-      font-family: "Recursive", system-ui, sans-serif;
-      font-variation-settings: "CASL" 0.5;
+      font-family: "Figtree", system-ui, sans-serif;
       -webkit-font-smoothing: antialiased;
       -webkit-tap-highlight-color: transparent;
       transition: background-color .3s, color .3s;
@@ -76,9 +75,8 @@
     h1 {
       font-size: clamp(2.6rem, 11vw, 4.2rem);
       line-height: .95;
-      font-weight: 850;
+      font-weight: 800;
       letter-spacing: -0.03em;
-      font-variation-settings: "CASL" 1;
     }
     .intro {
       margin-top: 12px;
@@ -153,13 +151,10 @@
     .name {
       display: block;
       font-size: 1.35rem;
-      font-weight: 750;
+      font-weight: 700;
       line-height: 1.15;
       letter-spacing: -0.01em;
-      font-variation-settings: "CASL" 0.6;
-      transition: font-variation-settings .3s;
     }
-    .app:active .name { font-variation-settings: "CASL" 1; }
     .desc {
       display: block;
       margin-top: 4px;
@@ -215,7 +210,7 @@
     <ul class="apps" id="apps"></ul>
 
     <footer>
-      Made by <a href="https://anujparakh.dev">Anuj Parakh</a>. Code on <a href="https://github.com/anujparakh">GitHub</a>.
+      More of my projects are on <a href="https://github.com/anujparakh">GitHub</a>.
     </footer>
   </main>
 
@@ -234,6 +229,7 @@
       { name: "Web Tools",             url: "https://webtools.anujparakh.dev",    emoji: "🧰", color: "#7CC4FF", description: "Handy browser utilities for developers." },
       { name: "Homescreen",            url: "https://homescreen.anujparakh.dev",  emoji: "🏠", color: "#C4A7FF", description: "A simple, clean start page for your browser." },
       { name: "Family Trees",          url: "https://family.anujparakh.dev",      emoji: "🌳", color: "#A3E07C", description: "View and edit your family tree." },
+      { name: "Personal Website",      url: "https://anujparakh.dev",             emoji: "👋", color: "#FFB38A", description: "My portfolio, projects and experience." },
     ];
 
     // ---------- Render tiles ----------
